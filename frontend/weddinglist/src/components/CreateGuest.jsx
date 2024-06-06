@@ -22,7 +22,7 @@ export function CreateGuest({list}){
                 setDeparture(value);
             }}></input><br></br>
 
-            <button onClick={()=>{
+            <button id="addbtn" onClick={()=>{
                 fetch("http://localhost:3002/list",{
                     method: "POST",
                     body: JSON.stringify({

@@ -1,3 +1,61 @@
 P{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+table, tr, th, td{
+    border: 1px solid black;
+}
+
+table{
+    position: relative;
+    left: 37%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-sizing: initial;
+}
+
+tr, th, td{
+    padding: 5px;
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+#deletebtn{
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(132, 1, 1);
+    cursor: pointer;
+}
+
+#confirmbtn{
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#confirmbtn:hover{
+    border: 2px solid green;
+}
+
+#addbtn{
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+    padding: 4px;
+    margin: 4px;
+    position: relative;
+    left: 3%;
+
+}
+
+#addbtn:hover{
+    border: 2px solid green;
+    
+}

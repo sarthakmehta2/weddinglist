@@ -57,4 +57,21 @@ app.put("/confirmed", async function(req,res){
 
 });
 
+app.put("/delete", async function(req,res){
+    const deletePayload = req.body;
+    const parsedPayload = updateGuest.safeParse(deletePayload);
+    if(!parsedPayload.success){
+        res.status(411).json({
+            msg: "Invalid inputs"
+        });
+        return;
+    }
+    await guest.deleteOne({
+        _id: req.body.guestid
+    });
+    res.json({
+        msg: "Guest deleted from the list"
+    });
+})
+
 app.listen(port);
